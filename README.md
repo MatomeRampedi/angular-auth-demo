@@ -1,5 +1,7 @@
 # Angular Firebase Authentication
 
+but it is forked!
+
 ![Angular Authentication Tutorial](https://s3.amazonaws.com/coursetro/posts/32-full.png)
 
 Check out a demo here: [Angular Authentication Example](https://coursetro.com/preview/angular-auth-demo/)
