@@ -1,5 +1,5 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
-import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
+import { Component, OnInit, HostBinding } from '@angular/core';//hostbinding for router animations
+import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2'; //angular fire for authorization
 import { Router } from '@angular/router';
 import { moveIn } from '../router.animations';
 

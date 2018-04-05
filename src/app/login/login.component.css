@@ -5,7 +5,7 @@
 }
 
 #fb {
-    background:#3B5998 url('assets/images/facebook.svg') no-repeat 14px 6px;
+    background:rgb(24, 60, 139) url('assets/images/facebook.svg') no-repeat 14px 6px;
     background-size: 47px;
     color:#fff;
 }

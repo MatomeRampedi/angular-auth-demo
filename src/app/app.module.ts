@@ -12,13 +12,17 @@ import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
 
 
-// Must export the config
+// firebase config informatoin for setting up an app
 export const firebaseConfig = {
-  apiKey: 'AIzaSyAaTLLTBfT8-tlCXOKlp4LrwQzhVWjbM1Q',
-  authDomain: 'angular-pre.firebaseapp.com',
-  databaseURL: 'https://angular-pre.firebaseio.com',
-  storageBucket: 'angular-pre.appspot.com',
-  messagingSenderId: '796422970338'
+
+    apiKey: "AIzaSyD61xL7NoSY3UjyO60o4-k_K4q6PJGEbo8",
+    authDomain: "angularauth-61a52.firebaseapp.com",
+    databaseURL: "https://angularauth-61a52.firebaseio.com",
+    projectId: "angularauth-61a52",
+    storageBucket: "",
+    messagingSenderId: "1097611592340"
+ 
+
 };
 
 @NgModule({
