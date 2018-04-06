@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { MembersComponent } from './members/members.component';
 import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
+import { TokensService } from './tokens.service';
 
 
 // firebase config informatoin for setting up an app
@@ -40,7 +41,7 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     routes
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard,TokensService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

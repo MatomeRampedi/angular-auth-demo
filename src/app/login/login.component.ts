@@ -1,7 +1,10 @@
-import { Component, OnInit, HostBinding } from '@angular/core';//hostbinding for router animations
-import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2'; //angular fire for authorization
+import { Component, OnInit, HostBinding } from '@angular/core';
+import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 import { Router } from '@angular/router';
 import { moveIn } from '../router.animations';
+import {  TokensService } from '../tokens.service';
+import { AuthGuard } from '../auth.service';
+
 
 @Component({
   selector: 'app-login',
@@ -13,13 +16,13 @@ import { moveIn } from '../router.animations';
 export class LoginComponent implements OnInit {
 
   error: any;
-  constructor(public af: AngularFire,private router: Router) {
+  constructor(public af: AngularFire,private router: Router,private userData:TokensService) {
 
-      this.af.auth.subscribe(auth => { 
-      if(auth) {
-        this.router.navigateByUrl('/members');
-      }
-    });
+    //   this.af.auth.subscribe(auth => { 
+    //   if(auth) {
+    //     this.router.navigateByUrl('/members');
+    //   }
+    // });
 
   }
 
@@ -27,8 +30,11 @@ export class LoginComponent implements OnInit {
     this.af.auth.login({
       provider: AuthProviders.Facebook,
       method: AuthMethods.Popup,
+      scope: ['email ,user_friends'], 
     }).then(
         (success) => {
+        
+        this.userData.setToken(success);
         this.router.navigate(['/members']);
       }).catch(
         (err) => {
@@ -42,6 +48,7 @@ export class LoginComponent implements OnInit {
       method: AuthMethods.Popup,
     }).then(
         (success) => {
+        
         this.router.navigate(['/members']);
       }).catch(
         (err) => {

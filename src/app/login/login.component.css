@@ -5,14 +5,15 @@
 }
 
 #fb {
-    background:rgb(24, 60, 139) url('assets/images/facebook.svg') no-repeat 14px 6px;
-    background-size: 47px;
-    color:#fff;
+    border-right: #364e92 1px solid;
+    background:rgb(59, 89, 152) url('assets/images/facebook.svg') no-repeat 25px;
+    background-size: 25px ;
+    color:rgb(255, 255, 255);
 }
 
 #google {
-    border: 1px solid #95989A;
-    background: #fff  url('assets/images/google.svg') no-repeat 25px;
+    border: 1px solid rgb(196, 18, 18);
+    background: rgb(221, 75, 57)  url('assets/images/google.svg') no-repeat 25px;
     background-size: 25px;
 }
 
@@ -21,7 +22,7 @@
     background-size: 25px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 30px) {
     #page {
         padding:1em;
     }
@@ -40,4 +41,6 @@
     #email {
         background: #ECECEC;
     }
+
+    
 }

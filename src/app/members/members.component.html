@@ -3,9 +3,18 @@
       <button (click)="logout()" class="basic-btn">Logout</button>
     </header>
     <div id="page" [@moveInLeft]="state">
-      <h2>Welcome {{ name.auth.displayName }}!</h2>
-
-      <img src="assets/images/filler.png" />
+      <h2>Welcome {{ name.auth.displayName }}!</h2>  
     </div>
-    
+ <div>
+  <div class="form-container" id="userInfo">
+      <h3>User Information:</h3>
+      <h3>{{name.auth.displayName}}</h3>
+      <h3>{{name.auth.email}}</h3>
+      <button (click)="graph()" class="basic-btn">graph</button>
+    </div>  
+</div>     
 </div>
+
+
+  
+      <!-- <button class=basic-btn>view all</button> -->

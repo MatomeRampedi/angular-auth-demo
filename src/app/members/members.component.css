@@ -5,9 +5,10 @@
 }
 
 header {
-    background:#3B8598;
+    background:rgb(207, 63, 63);
     width:100%;
 }
+
 
 .basic-btn {
     width:100px;
@@ -25,7 +26,22 @@ header {
 
 h2 {
     margin:0;
+    color: black;
+    
 }
+h3 {
+    margin:0;
+    color: black;
+    font-size: 7pt   
+}
+
+userinfo{
+    padding:0;
+    width:50%;
+    margin:0%;
+    border: #36925c 20px solid;
+}
+
 
 
 @media (max-width: 600px) {
@@ -35,5 +51,9 @@ h2 {
     #toolbar {
         width:90%;
         margin-left: -45%;
+        border-right: #364e92 1px solid;
+    }
+    #user info{
+    margin-left: -45%
     }
 }

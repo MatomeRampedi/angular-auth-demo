@@ -11,6 +11,7 @@ body {
     position:fixed;
     left:50%;
     margin-left:-250px;
+    display: block
 }
 
 button {
@@ -24,6 +25,15 @@ button {
 .basic-btn {
     background: #3B8598;
     color:white;
+}
+
+.userInfo{
+    background: white;
+    width: 100%;
+    color: black;
+    border: rgb(185, 9, 9);
+    background-size: 50px
+    
 }
 
 input.txt {
@@ -103,6 +113,7 @@ h2 {
         padding:1.2em;
         width:90%;
         margin-left:-45%;
+        display: block;
     }
     button {
         font-size:1em;
